@@ -1,0 +1,51 @@
+
+/* Button containing the image and label */
+
+/* Center everything in the webpage */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/* Donut image */
+.circle-btn img {
+    display: block;
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Text centered over the donut */
+.center-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 8px 16px;
+    border-radius: 4px;
+
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+
+    pointer-events: none;
+}
