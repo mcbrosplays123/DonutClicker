@@ -6,6 +6,7 @@ body {
     margin: 0;
     min-height: 100vh;
     display: flex;
+    background : #ffffff;
     justify-content: center;
     align-items: center;
 }
@@ -18,13 +19,16 @@ body {
 
     padding: 0;
     border: none;
-    background: none;
+    color: white;
+    background: wheat;
     cursor: pointer;
 }
 
 /* Donut image */
 .circle-btn img {
     display: block;
+    color: white;
+    background: wheat;
     width: 500px;
     max-width: 100%;
     height: auto;
@@ -37,7 +41,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    color: white;
+    color: wheat;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 8px 16px;
     border-radius: 4px;
@@ -49,3 +53,33 @@ body {
 
     pointer-events: none;
 }
+
+
+.goodLabel {
+    color: rgba(0, 0, 0, 0.6);
+    padding: 8px 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+  
+}
+.goodLabel2 {
+    color: rgba(0, 0, 0, 0.6);
+    padding: 8px 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+
+}
+.goodLabel3 {
+    color: rgba(0, 0, 0, 0.6);
+    padding: 8px 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.goodLabel4 {
+    color: rgba(0, 0, 0, 0.6);
+    padding: 8px 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+
