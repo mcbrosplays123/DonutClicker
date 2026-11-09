@@ -5,12 +5,14 @@ const goodLabel = document.getElementById('goodLabel');
 const goodLabel2 = document.getElementById('goodLabel2');
 const goodLabel3 = document.getElementById('goodLabel3');
 const goodLabel4 = document.getElementById('goodLabel4');
+const goodLabel5 = document.getElementById('goodLabel5');
 
 let count = 0;
 let autoClicker = false;
 let autoClicker2 = false;
 let autoClicker3 = false;
 let autoClicker4 = false;
+let autoClicker5 = false;
 
 // Update counter
 function updateCount(amount) {
@@ -57,6 +59,17 @@ function startAutoClicker4() {
     setInterval(() => {
         updateCount(5);
     }, 100)
+}
+
+// Level 5 autoclicker
+function startAutoClicker5() {
+    if (autoClicker5) return;
+
+    autoClicker5 = true;
+
+    setInterval(() => {
+        updateCount(150);
+    }, 1);
 }
 // Milestone messages
 function checkMilestones() {
@@ -113,6 +126,20 @@ function checkMilestones() {
     // Hide level 4 message
     if (count >= 1365) {
         goodLabel4.style.display = "none";
+    }
+
+     // Level 5 unlocked
+    if (count >= 3500 && !autoClicker) {
+        goodLabel5.textContent =
+            "Good Job! Keep Going, you now have the fifth and final level of autoclicker!  You only have 10,000 more points to get til you beat the game good luck!";
+        goodLabel5.style.display = "block";
+
+        startAutoClicker5();
+    }
+
+        // Hide level 4 message
+    if (count >= 4000) {
+        goodLabel5.style.display = "none";
     }
 }
 
