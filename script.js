@@ -129,7 +129,7 @@ function checkMilestones() {
     }
 
      // Level 5 unlocked
-    if (count >= 3500 && !autoClicker) {
+    if (count >= 3500 && !autoClicker5) {
         goodLabel5.textContent =
             "Good Job! Keep Going, you now have the fifth and final level of autoclicker!  You only have 10,000 more points to get til you beat the game good luck!";
         goodLabel5.style.display = "block";
