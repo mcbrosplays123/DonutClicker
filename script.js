@@ -129,19 +129,19 @@ function checkMilestones() {
     }
 
      // Level 5 unlocked
-    if (count >= 3500 && !autoClicker5) {
-        goodLabel5.textContent =
-            "Good Job! Keep Going, you now have the fifth and final level of autoclicker!  You only have 10,000 more points to get til you beat the game good luck!";
-        goodLabel5.style.display = "block";
+if (count >= 3500 && !autoClicker5) {
+    goodLabel5.textContent =
+        "Good Job! Keep Going, you now have the fifth and final level of autoclicker! You only have 10,000 more points to get til you beat the game good luck!";
+    goodLabel5.style.display = "block";
 
-        startAutoClicker5();
-    }
+    startAutoClicker5();
 
-        // Hide level 4 message
-    if (count >= 4000) {
+    // Hide after 4 seconds (4000 milliseconds)
+    setTimeout(() => {
         goodLabel5.style.display = "none";
-    }
+    }, 4000);
 }
+
 
 // Clicking the donut
 button.addEventListener('click', function () {
