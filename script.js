@@ -28,8 +28,8 @@ function startAutoClicker() {
     autoClicker = true;
 
     setInterval(() => {
-        updateCount(1000);
-    }, 10);
+        updateCount(1);
+    }, 500);
 }
 
 // Level 2 autoclicker
