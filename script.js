@@ -122,7 +122,7 @@ function checkMilestones() {
       goodLabel5.style.display = "none";
     }, 4000);
   }
-} // <--- THIS CLOSING BRACE WAS MISSING!
+} 
 
 // Clicking the donut
 button.addEventListener('click', function () {
@@ -134,7 +134,7 @@ document.addEventListener('keydown', function (event) {
   const validKeys = [
     'Space', 'KeyQ', 'KeyW', 'KeyE', 'KeyR', 'KeyT', 'KeyY', 'KeyU', 'KeyI', 'KeyO', 'KeyP',
     'KeyA', 'KeyS', 'KeyD', 'KeyF', 'KeyG', 'KeyH', 'KeyJ', 'KeyK', 'KeyL',
-    'KeyZ', 'KeyX', 'KeyC', 'KeyV', 'KeyB', 'KeyN', 'KeyM'
+    'KeyZ', 'KeyX', 'KeyC', 'KeyV', 'KeyB', 'KeyN', 'KeyM', '<<', '>>'
   ];
 
   if (validKeys.includes(event.code) && !event.repeat) {
